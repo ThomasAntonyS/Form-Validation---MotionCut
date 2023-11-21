@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="container">
         <div class="title">Registration</div>
         <form action="#">
           <div class="user__details">
             <div class="input__box">
               <span class="details">Full Name</span>
-              <input type="text" placeholder="E.g: Thomas Antony S" required>
+              <input type="text" placeholder="E.g: Thomas Antony S" required id="full-name">
             </div>
             <div class="input__box">
               <span class="details">Username</span>
@@ -22,7 +23,7 @@
             </div>
             <div class="input__box">
               <span class="details">Email</span>
-              <input type="email" placeholder="dummy@gmail.com" required>
+              <input type="email" placeholder="dummy@gmail.com" required id="email-id">
             </div>
             <div class="input__box">
               <span class="details">Phone Number</span>
@@ -42,6 +43,14 @@
             <input type="submit" id="Register">
           </div>
         </form>
+        <div id="display-info">
+          <p class="disp-title"><i class="fa-solid fa-certificate" style="color: #000000;"></i>Registration Details</p>
+          <p id="disp-Fname"></p>
+          <p id="disp-Uname"></p>
+          <p id="disp-Email"></p>
+          <p id="disp-Passw"></p>
+          <button id="Done">Done !</button>
+        </div>
       </div>
 </body>
 </html>
