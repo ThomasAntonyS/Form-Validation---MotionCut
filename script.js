@@ -18,14 +18,6 @@ registerBtn.addEventListener('click',()=>{
     if (password.value=="" || password.value!=cfm_password.value) {
        alert("Please fill the correct details")
     }
-    Fname.innerText = "Name: "+Fullname.value
-    Uname.innerText = "Username: "+user.value
-    Email.innerText = "Email: "+email.value
-    pass.innerText = "Password: "+password.value
-    infoBox.style.opacity = 1
-    infoBox.style.zIndex = 5
+    alert('Registration Sucessfull')
 })
 
-doneBtn.addEventListener('click',()=>{
-    infoBox.style.opacity=0
-})
